@@ -1,0 +1,621 @@
+
+*** Running vivado
+    with args -log fifo_ddr4_buf.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_ddr4_buf.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source fifo_ddr4_buf.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_ddr4_buf
+Command: synth_design -top fifo_ddr4_buf -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 242137
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/zchliu/Xilinx/2022.2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2933.824 ; gain = 247.801 ; free physical = 18092 ; free virtual = 25165
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2270.143; parent = 2087.562; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3965.242; parent = 2936.797; children = 1028.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fifo_ddr4_buf' [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/synth/fifo_ddr4_buf.vhd:75]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 255 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 254 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_RD_DEPTH bound to: 256 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_WR_DEPTH bound to: 256 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_7' declared at '/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_7' [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/synth/fifo_ddr4_buf.vhd:543]
+INFO: [Synth 8-256] done synthesizing module 'fifo_ddr4_buf' (0#1) [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/synth/fifo_ddr4_buf.vhd:75]
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[8] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[7] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[6] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[8] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[7] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[6] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[7] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[6] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[5] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[4] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[3] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[2] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[1] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[0] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[7] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[6] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[5] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[4] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module wr_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[7] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[6] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[5] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[7] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[6] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[5] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[7] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[6] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[5] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module updn_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_RD_RST in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_ALMOST_EMPTY in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_RD_RST in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[7] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[6] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[5] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[4] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[3] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[2] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[1] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[0] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module rd_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_BUSY in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_FB in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FULL in module rd_logic is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3108.762 ; gain = 422.738 ; free physical = 18159 ; free virtual = 25236
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2270.143; parent = 2087.562; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4137.211; parent = 3108.766; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3126.574 ; gain = 440.551 ; free physical = 18159 ; free virtual = 25236
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2270.143; parent = 2087.562; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4155.023; parent = 3126.578; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3126.574 ; gain = 440.551 ; free physical = 18159 ; free virtual = 25236
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2270.143; parent = 2087.562; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4155.023; parent = 3126.578; children = 1028.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3132.512 ; gain = 0.000 ; free physical = 18149 ; free virtual = 25226
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/fifo_ddr4_buf_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/fifo_ddr4_buf_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/fifo_ddr4_buf.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/fifo_ddr4_buf.xdc] for cell 'U0'
+Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.runs/fifo_ddr4_buf_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.runs/fifo_ddr4_buf_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3259.293 ; gain = 0.000 ; free physical = 18083 ; free virtual = 25152
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3259.293 ; gain = 0.000 ; free physical = 18082 ; free virtual = 25151
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/zchliu/Xilinx/2022.2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3259.293 ; gain = 573.270 ; free physical = 18152 ; free virtual = 25218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2291.242; parent = 2108.661; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4287.742; parent = 3259.297; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3259.293 ; gain = 573.270 ; free physical = 18152 ; free virtual = 25218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2291.242; parent = 2108.661; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4287.742; parent = 3259.297; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.runs/fifo_ddr4_buf_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3259.293 ; gain = 573.270 ; free physical = 18152 ; free virtual = 25218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2291.242; parent = 2108.661; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4287.742; parent = 3259.297; children = 1028.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
+INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               10 |                               10
+       both_stages_valid |                               11 |                               11
+            stage2_valid |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 3259.293 ; gain = 573.270 ; free physical = 18145 ; free virtual = 25213
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2291.242; parent = 2108.661; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4287.742; parent = 3259.297; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 33    
++---Registers : 
+	              128 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3259.293 ; gain = 573.270 ; free physical = 18125 ; free virtual = 25203
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2291.242; parent = 2108.661; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4287.742; parent = 3259.297; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+|U0          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 256 x 128            | RAM64M8 x 76  | 
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3563.684 ; gain = 877.660 ; free physical = 17575 ; free virtual = 24646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2845.673; parent = 2663.123; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4592.133; parent = 3563.688; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17569 ; free virtual = 24641
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2850.396; parent = 2667.846; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+|U0          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 256 x 128            | RAM64M8 x 76  | 
++------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17567 ; free virtual = 24640
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2850.763; parent = 2668.213; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17558 ; free virtual = 24637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2851.704; parent = 2669.154; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17558 ; free virtual = 24637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2851.704; parent = 2669.154; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17557 ; free virtual = 24637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2851.962; parent = 2669.412; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17557 ; free virtual = 24637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2852.024; parent = 2669.475; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17557 ; free virtual = 24637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2852.024; parent = 2669.475; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17554 ; free virtual = 24634
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2852.024; parent = 2669.475; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |     1|
+|2     |LUT1    |    14|
+|3     |LUT2    |    15|
+|4     |LUT3    |     8|
+|5     |LUT4    |    22|
+|6     |LUT5    |     4|
+|7     |LUT6    |   137|
+|8     |RAM64M  |     4|
+|9     |RAM64M8 |    72|
+|10    |FDRE    |   327|
+|11    |FDSE    |     3|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.730 ; gain = 908.707 ; free physical = 17554 ; free virtual = 24634
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2852.040; parent = 2669.490; children = 182.581
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4623.180; parent = 3594.734; children = 1028.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 464 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3594.730 ; gain = 775.988 ; free physical = 17593 ; free virtual = 24672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3594.738 ; gain = 908.707 ; free physical = 17593 ; free virtual = 24672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3594.738 ; gain = 0.000 ; free physical = 17706 ; free virtual = 24785
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3659.398 ; gain = 0.000 ; free physical = 17640 ; free virtual = 24709
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 4 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 72 instances
+
+Synth Design complete, checksum: acee692
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3659.398 ; gain = 1879.316 ; free physical = 17850 ; free virtual = 24919
+INFO: [Common 17-1381] The checkpoint '/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.runs/fifo_ddr4_buf_synth_1/fifo_ddr4_buf.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fifo_ddr4_buf, cache-ID = c43c93c6d3827cb9
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/zchliu/work/Vivado_Project/zcu102_pl_ddr4/zcu102_pl_ddr4.runs/fifo_ddr4_buf_synth_1/fifo_ddr4_buf.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fifo_ddr4_buf_utilization_synth.rpt -pb fifo_ddr4_buf_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 01:00:09 2023...

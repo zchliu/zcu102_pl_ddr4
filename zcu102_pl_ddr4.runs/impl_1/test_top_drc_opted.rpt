@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May  9 19:12:52 2023
+| Host         : zchliu-lenovo running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_drc -file test_top_drc_opted.rpt -pb test_top_drc_opted.pb -rpx test_top_drc_opted.rpx
+| Design       : test_top
+| Device       : xczu9eg-ffvb1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_test_top
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+--------------------+------------+
+| Rule   | Severity | Description        | Violations |
++--------+----------+--------------------+------------+
+| MIG-69 | Warning  | Invalid Constraint | 1          |
++--------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+MIG-69#1 Warning
+Invalid Constraint  
+[ddr4_u] The Memory IP reset port %ELG has an incompatible IO Standard LVCMOS18 selected. If a level shifter or similar is used to ensure compatibility, this DRC can be demoted. For more details please refer AR66800.
+Related violations: <none>
+
+

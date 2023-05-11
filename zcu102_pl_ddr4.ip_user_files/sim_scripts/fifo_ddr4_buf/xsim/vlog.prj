@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/fifo_ddr4_buf/sim/fifo_ddr4_buf.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

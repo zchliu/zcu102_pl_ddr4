@@ -1,0 +1,73 @@
+verilog xil_defaultlib --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/map" --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ip_top" --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/bd_0/ip/ip_6/sim/bd_bf3f_lmb_bram_I_0.v" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/bd_0/ip/ip_9/sim/bd_bf3f_second_lmb_bram_I_0.v" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/bd_0/sim/bd_bf3f.v" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_0/sim/ddr4_core_microblaze_mcs.v" \
+
+sv xil_defaultlib --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/map" --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ip_top" --include "../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/phy/ddr4_core_phy_ddr4.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/ip_1/rtl/ip_top/ddr4_core_phy.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_wtr.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ref.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_rd_wr.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_periodic.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_group.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc_merge_enc.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc_gen.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc_fi_xor.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc_dec_fix.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc_buf.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ecc.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_ctl.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_cmd_mux_c.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_cmd_mux_ap.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_arb_p.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_arb_mux_p.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_arb_c.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_arb_a.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_act_timer.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc_act_rank.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/controller/ddr4_v2_2_mc.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ui/ddr4_v2_2_ui_wr_data.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ui/ddr4_v2_2_ui_rd_data.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ui/ddr4_v2_2_ui_cmd.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ui/ddr4_v2_2_ui.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/clocking/ddr4_v2_2_infrastructure.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_write.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_sync.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_read.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_rd_en.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_pi.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_cplx.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_config_rom.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_top.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_cal.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_v2_2_dp_AB9.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ip_top/ddr4_core_ddr4.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ip_top/ddr4_core_ddr4_mem_intfc.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/cal/ddr4_core_ddr4_cal_riu.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/rtl/ip_top/ddr4_core.sv" \
+"../../../../zcu102_pl_ddr4.gen/sources_1/ip/ddr4_core/tb/ddr4_core_microblaze_mcs_0.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

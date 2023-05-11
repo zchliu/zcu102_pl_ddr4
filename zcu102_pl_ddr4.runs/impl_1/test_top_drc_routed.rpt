@@ -1,0 +1,78 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May  9 19:16:23 2023
+| Host         : zchliu-lenovo running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_drc -file test_top_drc_routed.rpt -pb test_top_drc_routed.pb -rpx test_top_drc_routed.rpx
+| Design       : test_top
+| Device       : xczu9eg-ffvb1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_test_top
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 5
++-----------+----------+-------------------------+------------+
+| Rule      | Severity | Description             | Violations |
++-----------+----------+-------------------------+------------+
+| MIG-69    | Warning  | Invalid Constraint      | 1          |
+| PDCN-1569 | Warning  | LUT equation term check | 3          |
+| RTSTAT-10 | Warning  | No routable loads       | 1          |
++-----------+----------+-------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+MIG-69#1 Warning
+Invalid Constraint  
+[ddr4_u] The Memory IP reset port %ELG has an incompatible IO Standard LVCMOS18 selected. If a level shifter or similar is used to ensure compatibility, this DRC can be demoted. For more details please refer AR66800.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A5*A4)+(A5*(~A4)*(~A3))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A5*A4)+(A5*(~A4)*(~A3))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+147 net(s) have no routable loads. The problem bus(es) and/or net(s) are ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu,
+ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu,
+ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12],
+ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13],
+ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14],
+ddr4_u/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[2].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
+ddr4_u/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1]
+ (the first 15 of 145 listed nets/buses).
+Related violations: <none>
+
+
